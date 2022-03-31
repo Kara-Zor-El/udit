@@ -51,7 +51,7 @@ async fn meaning(url: &str, title: &str) {
 
     for element in document.select(&article_selector) {
 
-        let inner = element.inner_html().to_string();
+        let inner = element.inner_html().to_string().replace("<br>\n<br>", "\n");
         let result = remove_tags_from(&inner).replace(".", ". ").replace("  ", " ");
 
 
@@ -59,7 +59,7 @@ async fn meaning(url: &str, title: &str) {
         println!("{}{}: \n\"{}\"\n", "Meaning Of ".bold(), title_print.bold(), result.normal());
 
         for element2 in document.select(&example_selector) {
-            let inner2 = element2.inner_html().to_string();
+            let inner2 = element2.inner_html().to_string().replace("<br>\n<br>", "\n");
             let result2 = remove_tags_from(&inner2).replace(".",". ").replace("  ", " ");
             println!("{}\n{}\n", "Example:".bold(), result2.normal());
             break;
