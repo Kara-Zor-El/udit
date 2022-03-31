@@ -2,6 +2,10 @@
 name = "udit"
 version = "0.1.0"
 edition = "2021"
+description = "UDIT (urban dictionary it) is a tool to quickly search up words with urban dictionary"
+repository = "https://github.com/Kara-Zor-El/udit"
+license = "MIT"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
