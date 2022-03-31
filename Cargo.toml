@@ -1,6 +1,6 @@
 [package]
 name = "udit"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "UDIT (urban dictionary it) is a tool to quickly search up words with urban dictionary"
 repository = "https://github.com/Kara-Zor-El/udit"
